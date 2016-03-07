@@ -20,7 +20,6 @@
  */
 
 App::uses('Controller', 'Controller');
-App::uses('CakeEmail', 'Network/Email');
 
 /**
  * Application Controller

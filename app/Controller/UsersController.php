@@ -115,18 +115,8 @@ class UsersController extends AppController {
         }
     }
 	
-	private function enviarCorreo( $params = null){
-		$mensaje = "Se ha creado una nueva cuenta de ".$params['rol']." para usted:<br><hr>Usuario: ".$params['usuario']."<br>Correo: ".$params['correo']."<br>Fecha de creación: ".$params['fecha']."<br>Ver el siguiente enlace: ".Router::url('/', true).'users/resumen/'.$params['id']."<br><hr>";
-		/*SMTP*/
-		$email = new CakeEmail('default');
-		$email->from(array('ucrtcu593@gmail.com' => 'TCU 593'))
-			->to($params['correo'])
-			->subject('Nueva cuenta de usuario')
-			->send($mensaje);
-		/*SMTP*/
-	}
-	
-	private function enviarCorreo2( $params = null ){
+	private function enviarCorreo( $params = null ){
+		
 		//$mensaje = "Se ha creado un nuevo usuario:<br><hr>Usuario: ".$params['usuario']."<br>Correo: ".$params['correo']."<br>Rol: ".$params['rol']."<br>Fecha creación: ".$params['fecha']."<br><hr>";
 		$mensaje = "Se ha creado una nueva cuenta de ".$params['rol']." para usted:<br><hr>Usuario: ".$params['usuario']."<br>Correo: ".$params['correo']."<br>Fecha de creación: ".$params['fecha']."<br><hr>";
 		$plantilla = file_get_contents(Router::url('/', true).'app/webroot/template/correo.html');

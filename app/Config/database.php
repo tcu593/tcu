@@ -69,10 +69,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'sql5.freemysqlhosting.net',
-		'login' => 'sql5109416',
-		'password' => '8Kd59W7fgG',
-		'database' => 'sql5109416',
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'tcu593',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
