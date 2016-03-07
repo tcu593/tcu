@@ -116,7 +116,7 @@ class UsersController extends AppController {
     }
 	
 	private function enviarCorreo( $params = null ){
-		$mensaje = "Se ha creado una nueva cuenta de ".$params['rol']." para usted:\r\nUsuario: ".$params['usuario']."\r\nCorreo: ".$params['correo']."\r\nFecha de creación: ".$params['fecha']."\r\n";
+		$mensaje = "Se ha creado una nueva cuenta de ".$params['rol']." para usted:\r\nUsuario: ".$params['usuario']."\r\nCorreo: ".$params['correo']."\r\nFecha de creación: ".$params['fecha']."\r\nVer el siguiente enlace: ".Router::url('/', true).'users/resumen/'.$params['id']."\r\n";
 		$email = new CakeEmail('default');
 		$email	->from(array('ucrtcu593@gmail.com' => 'TCU 593'))
 				->to($params['correo'])
