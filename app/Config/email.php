@@ -47,7 +47,7 @@ class EmailConfig {
 		'host' => 'ssl://smtp.gmail.com',
 		'port' => 465,
 		'username' => 'ucrtcu593@gmail.com',
-		'password' => 'secret'
+		'password' => 'admintcu593'
 	);
 
 	public $fast = array(
