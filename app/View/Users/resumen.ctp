@@ -2,7 +2,7 @@
     <div class="box box-primary">
         <div class="box-body box-profile">
             <h3 class="profile-username text-center">
-			<img class="img-responsive" src="/tcu/app/webroot/img/user.png" alt="User profile picture">
+			<img class="img-responsive" src="/app/webroot/img/user.png" alt="User profile picture">
 			<?php echo $user['User']['username']; ?></h3>
             <p class="text-muted text-center"><?php echo $user['User']['role']; ?></p>
             <ul class="list-group list-group-unbordered">
