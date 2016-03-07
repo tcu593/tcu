@@ -36,11 +36,13 @@
  */
 class EmailConfig {
 
-	public $smtp = array(
+	public $default = array(
 		'host' => 'ssl://smtp.gmail.com',
 		'port' => 465,
+		'timeout' => 30,
 		'username' => 'ucrtcu593@gmail.com',
-		'password' => 'admintcu593'
+		'password' => 'admintcu593',
+		'transport' => 'Smtp'
 	);
 
 }

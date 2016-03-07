@@ -2,6 +2,7 @@
 App::uses('AppController', 'Controller');
 App::uses('Security', 'Utility');
 App::uses('String', 'Utility');
+App::uses('CakeEmail', 'Network/Email');
 
 class UsersController extends AppController {
 	
@@ -117,7 +118,8 @@ class UsersController extends AppController {
 	
 	private function enviarCorreo( $params = null){
 		/*PBA SMTP*/
-		$Email = new CakeEmail();
+		$email = new CakeEmail('default');
+		debug($email);
 		$Email->from(array('ucrtcu593@gmail.com' => 'TCU593'))
 			->to($params['correo'])
 			->subject('About')
