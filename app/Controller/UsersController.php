@@ -118,7 +118,7 @@ class UsersController extends AppController {
 	private function enviarCorreo( $params = null ){
 		/*PBA SMTP*/
 		$Email = new CakeEmail();
-		$Email->from(array('ucrtcu593@gmail' => 'My Site'))
+		$Email->from(array('ucrtcu593@gmail.com' => 'My Site'))
 			->to($params['correo'])
 			->subject('About')
 			->send('My message');
