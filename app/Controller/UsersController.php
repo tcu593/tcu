@@ -2,7 +2,6 @@
 App::uses('AppController', 'Controller');
 App::uses('Security', 'Utility');
 App::uses('String', 'Utility');
-App::uses('CakeEmail', 'Network/Email');
 
 class UsersController extends AppController {
 	
