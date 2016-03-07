@@ -44,5 +44,4 @@ class EmailConfig {
 		'password' => 'admintcu593',
 		'transport' => 'Smtp'
 	);
-
 }
